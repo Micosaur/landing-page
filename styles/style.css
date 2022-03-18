@@ -3,6 +3,18 @@
   font: 18px Arial;
 }
 
+body {
+min-height: 100vh;
+}
+
+body, header, .section1, .section2, .section3, .section4, .footer, ul, .subsection2-2 {
+  display: flex;
+}
+
+body, .subsection1, .section2, .section3, .subsection4-1, .item {
+  flex-direction: column;
+}
+
 header, .section1, footer {
   background-color: #1F2937;
 }
