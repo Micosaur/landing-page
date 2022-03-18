@@ -1,0 +1,50 @@
+* {
+  color: #E5E7EB;
+  font: 18px Arial;
+}
+
+header, .section1, footer {
+  background-color: #1F2937;
+}
+
+.header, .logo, .hero{
+  font-size: 24px;
+  color: #F9FAF8;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.hero {
+  font: 800 48px Arial;
+}
+
+.subsection2-1 {
+  color: #1F2937;
+  font: 800 36px Arial;
+}
+
+.section3 {
+  background-color: #E5E7EB;
+}
+
+.quote, .author {
+  color: #1F2937;
+  font: italic lighter 36px Arial;
+}
+
+.author {
+  font: bold 18px Arial;
+}
+
+.section4, button {
+  background-color: #3882F6;
+}
+
