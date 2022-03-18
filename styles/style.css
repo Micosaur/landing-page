@@ -8,11 +8,11 @@ min-height: 100vh;
 margin: 0;
 }
 
-body, header, .header, .container, .section1, .section2, .section3, .section4, .footer, ul, .subsection2-2 {
+body, header, .header, .container, .section1, .section2, .item, .section3, .quote, .section4, .footer, ul, .subsection1-2, .subsection2-1, .subsection2-2 {
   display: flex;
 }
 
-.container, .section1, .section2, .section3, .section4 {
+.container, .section1, .section2, .subsection2-1, .subsection2-2, .section3, .section4 {
   flex: 1;
 }
 
@@ -20,17 +20,25 @@ body, .container, .subsection1, .section2, .section3, .subsection4-1, .item {
   flex-direction: column;
 }
 
-body, .container, header, .section1 {
+body, .container, header {
  justify-content: space-between;
 }
 
-.section1, .section2, .section3, .section4, .footer {
+.header, ul {
+  gap: 20px;
+}
+
+.section1, .section2, .section3, .section4, .footer, .subsection1-2, .subsection2-1, .subsection2-2, .quote, .item {
   justify-content: center;
   align-items: center;
 }
 
 header, .section1, footer {
   background-color: #1F2937;
+}
+
+header {
+  padding: 0 150px;
 }
 
 .subheader1, .logo, .hero{
@@ -48,8 +56,18 @@ ul, li {
   padding: 0px;
 }
 
+.section1 {
+  padding: 0 150px;
+  justify-content: space-between;
+}
+
+.subsection1-1, .subsection1-2 {
+  width: 40%;
+}
+
 .hero {
   font: 800 48px Arial;
+  width: 90%;
 }
 
 .subsection2-1 {
@@ -57,14 +75,28 @@ ul, li {
   font: 800 36px Arial;
 }
 
+.subsection2-2 {
+  gap: 3%;
+}
+
+.item {
+  width: 15%;
+}
+
 .card {
-  border: 2px solid blue;
-  width: 100px;
-  height: 100px;
+  border: 2px solid #3882F6;
+  width: 70%;
+  padding-top: 70%;
+}
+
+.card-text {
+  width: 70%;
+  text-align: center;
 }
 
 .section3 {
   background-color: #E5E7EB;
+  padding: 0 200px;
 }
 
 .quote, .author {
@@ -74,12 +106,35 @@ ul, li {
 
 .author {
   font: bold 18px Arial;
+  margin-left: auto;
 }
 
 .section4, button {
   background-color: #3882F6;
 }
 
+.section4 {
+  margin: 75px 150px;
+  justify-content: space-around;
+}
+
+.message {
+  font-weight: bolder;
+}
+
 button, .card, .section4{
   border-radius: 8px;
+}
+
+.subsection1-1 button {
+  border-style: none;
+}
+
+.section4 button {
+  border-color: white;
+  border-style: solid;
+}
+
+footer {
+  padding: 30px 0;
 }
