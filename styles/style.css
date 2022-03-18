@@ -5,21 +5,35 @@
 
 body {
 min-height: 100vh;
+margin: 0;
 }
 
-body, header, .section1, .section2, .section3, .section4, .footer, ul, .subsection2-2 {
+body, header, .header, .container, .section1, .section2, .section3, .section4, .footer, ul, .subsection2-2 {
   display: flex;
 }
 
-body, .subsection1, .section2, .section3, .subsection4-1, .item {
+.container, .section1, .section2, .section3, .section4 {
+  flex: 1;
+}
+
+body, .container, .subsection1, .section2, .section3, .subsection4-1, .item {
   flex-direction: column;
+}
+
+body, .container, header, .section1 {
+ justify-content: space-between;
+}
+
+.section1, .section2, .section3, .section4, .footer {
+  justify-content: center;
+  align-items: center;
 }
 
 header, .section1, footer {
   background-color: #1F2937;
 }
 
-.header, .logo, .hero{
+.subheader1, .logo, .hero{
   font-size: 24px;
   color: #F9FAF8;
 }
